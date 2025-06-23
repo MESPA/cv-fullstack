@@ -39,16 +39,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h1 class="display-4">Manuel España</h1>
-                    <h2>Full-Stack Web Developer</h2>
-                    <p class="lead">Santo Domingo, Distrito Nacional, República Dominicana</p>
-                    <div class="mt-4">
-                        <span class="badge bg-light text-dark skills-badge">C#</span>
-                        <span class="badge bg-light text-dark skills-badge">.NET Core</span>
-                        <span class="badge bg-light text-dark skills-badge">React</span>
-                        <span class="badge bg-light text-dark skills-badge">Selenium</span>
-                        <span class="badge bg-light text-dark skills-badge">Cypress</span>
-                        <span class="badge bg-light text-dark skills-badge">Postman</span>
+                    <h1 class="display-4" id="name">Manuel España</h1>
+                    <h2 id="mainTitle">Full-Stack Web Developer</h2>
+                    <p class="lead" id="locationText">Santo Domingo, Distrito Nacional, República Dominicana</p>
+                    <div class="mt-4" id="skillsBadges">
+                        <span class="badge bg-light text-dark skills-badge" data-badge="csharp">C#</span>
+                        <span class="badge bg-light text-dark skills-badge" data-badge="netcore">.NET Core</span>
+                        <span class="badge bg-light text-dark skills-badge" data-badge="powerbi">Power BI</span>
+                        <span class="badge bg-light text-dark skills-badge" data-badge="react">React</span>
+                        <span class="badge bg-light text-dark skills-badge" data-badge="selenium">Selenium</span>
+                        <span class="badge bg-light text-dark skills-badge" data-badge="cypress">Cypress</span>
+                        <span class="badge bg-light text-dark skills-badge" data-badge="postman">Postman</span>
                     </div>
                 </div>
             </div>
@@ -58,7 +59,7 @@
     <div class="container my-5">
         <section id="about">
             <h2 class="mb-4">Perfil Profesional</h2>
-            <p>Soy Desarrollador Full-Stack con más de 8 años de experiencia en desarrollo de aplicaciones
+            <p>Soy Desarrollador Full-Stack con más de 10 años de experiencia en desarrollo de aplicaciones
 con C# .NET / .NET Core, React. Razor, Aplicación de buenas prácticas como SOLID, MVC,
 MVVM desarrollo de Web APIs, soluciones multiplataforma y multiplataforma. Colaboración
 en proyectos de distintos sectores: salud, fintech, ERP y sector público.</p>
@@ -79,10 +80,35 @@ en proyectos de distintos sectores: salud, fintech, ERP y sector público.</p>
                     <li>Colaboración con equipos de desarrollo y Scrum Master</li>
                 </ul>
             </div>
+                 <div class="experience-item">
+                <h3>Backend Developer</h3>
+                <p class="text-muted">Talently - Prosoft - CR | 2024 – Enero – 2025 </p>
+                  <p>Mantenimiento y Optimización</p>
+                <ul>
+                
+
+                 
+                   
+                    <li>Desarrollo y mantenimiento de funcionalidades para los sistemas legacy de la JPS.</li>
+                    <li>Migración de los sistemas legacy de la JPS a web con .net y blazor.</li>
+                   
+ 
+                        
+                      
+
+                </ul>
+                <p>Migraciones y Optimizacion</p>
+                <ul>
+                    <li>Se realizaron migraciones de base de datos sysbase a sql server</li>
+                    <li>Creación y mantenimiento de procedimientos almacenados (stored procedures) y vistas en SQL Server.</li>
+                    <li>Optimización de consultas y procesos para mejorar el rendimiento y la eficiencia de los sistemas.</li>
+                </ul>  
+                    
+            </div>
 
             <div class="experience-item">
                 <h3>Programador Full-Stack</h3>
-                <p class="text-muted">ConCentra/Innovix - DR | Noviembre 2022 - Enero 2025</p>
+                <p class="text-muted">ConCentra/Innovix - DR | Noviembre 2022 - Marzo 2024</p>
                 <ul>
                     <p class="h5">Creación de reportería con proceso Batch.</p>
                     <p class="h5">Mantenimiento y desarrollo de funcionalidades en sistemas Bancatel internos.</p>
@@ -116,6 +142,15 @@ en proyectos de distintos sectores: salud, fintech, ERP y sector público.</p>
                     <li>Implementación de software para el Ministerio de Administración Pública</li>
                     <li>Desarrollo de Data Warehouse para Banco Vimenca</li>
                     <li>Mantenimiento y optimización de sistemas</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Ministerio Poder Popular para la Salud (MPPS) – VE</h3>
+                <p class="text-muted">Programador FullStack – BI | marzo 2014 – agosto 2016</p>
+                <ul>
+                    <li>Desarrollo y mantenimiento de funcionalidades, reportes procesos batch y optimización de los sistemas del MPPS</li>
+                    <li>Recolección y validación de datos para el análisis y toma de decisiones con SQL Server, SSAS, SSIS, SSRS y diferentes fuentes de datos.</li>
+                    <li>Desarrollo de data warehouse con enfoque en analítica y control de información.</li>
                 </ul>
             </div>
         </section>
@@ -219,102 +254,242 @@ en proyectos de distintos sectores: salud, fintech, ERP y sector público.</p>
     <script>
         const translations = {
             es: {
-                profile: "Perfil Profesional",
-                experience: "Experiencia Profesional",
-                skills: "Habilidades Técnicas",
-                education: "Educación",
-                certifications: "Cursos y Certificaciones",
-                languages: "Idiomas",
-                location: "Santo Domingo, Distrito Nacional, República Dominicana",
-                profileText: "Profesional con más de 8 años de experiencia en el desarrollo de aplicaciones C# y .NET Framework/.NET de alta calidad, aplicando mejores prácticas como SOLID, patrones de diseño, MVC, MVVM, desarrollo de Web APIs, así como aplicaciones multicapas y multiplataforma para distintos sectores.",
-                qaProfile: "Como QA Automation, diseño y desarrollo pruebas automatizadas utilizando herramientas como Selenium, Cypress y Postman, asegurando la calidad del software mediante la implementación de pruebas de regresión, integración y carga. Trabajo con CI/CD para garantizar la ejecución eficiente de los procesos de pruebas.",
-                qaManual: "En mi rol de QA Tester, realizo pruebas manuales y exploratorias, validando la funcionalidad, usabilidad y seguridad de las aplicaciones. Analizo y reporto defectos de manera estructurada, contribuyendo a la mejora continua del software.",
                 lang: "English",
-                // Experiencia
-                qaTesterTitle: "QA Tester",
-                qaTesterPeriod: "Talently - Prosoft - CR | Abril 2024 – Enero 2025",
-                qaTesterExp1: "Validación y pruebas de aplicaciones web y consola de la JPS",
-                qaTesterExp2: "Análisis de requerimientos y diseño de casos de prueba",
-                qaTesterExp3: "Ejecución de pruebas en diferentes entornos",
-                qaTesterExp4: "Gestión de defectos en Jira y Azure DevOps",
-                qaTesterExp5: "Colaboración con equipos de desarrollo y Scrum Master",
-                fullStackQATitle: "Programador Full-Stack - QA Automation",
-                fullStackQAPeriod: "ConCentra/Innovix - DR | Noviembre 2022 - Abril 2024",
-                fullStackQAExp1: "Creación de reportería con proceso Batch",
-                fullStackQAExp2: "Implementación de proceso de Automatización Sistemas Bancatel",
-                fullStackQAExp3: "Automatización de Frontend y Backend con Selenium y C# Nunit",
-                fullStackTitle: "Programador Full-Stack",
-                fullStackPeriod: "Asociación Dominicana de Rehabilitación - DR | Marzo 2019 - Septiembre 2022",
-                fullStackExp1: "Implementación de software clínico",
-                fullStackExp2: "Creación de software de capacitación de personal",
-                fullStackExp3: "Integración de ERP SAP y software de ventas",
-                fullStackExp4: "Mantenimiento y mejora continua de sistemas",
-                consultantTitle: "Consultor Técnico Junior, Programador",
-                consultantPeriod: "Octagono GPS - DR | Octubre 2016 - Marzo 2019",
-                consultantExp1: "Implementación de software para el Ministerio de Administración Pública",
-                consultantExp2: "Desarrollo de Data Warehouse para Banco Vimenca",
-                consultantExp3: "Mantenimiento y optimización de sistemas",
-                // Habilidades
-                languagesTitle: "Lenguajes",
-                frameworksTitle: "Frameworks",
-                databasesTitle: "Bases de Datos",
-                toolsTitle: "Herramientas",
-                // Educación
+                name: "Manuel España",
+                mainTitle: "Full-Stack Web Developer",
+                location: "Santo Domingo, Distrito Nacional, República Dominicana",
+                badges: {
+                    csharp: "C#",
+                    netcore: ".NET Core",
+                    powerbi: "Power BI",
+                    react: "React",
+                    selenium: "Selenium",
+                    cypress: "Cypress",
+                    postman: "Postman"
+                },
+                profile: "Perfil Profesional",
+                profileText: "Soy Desarrollador Full-Stack con más de 10 años de experiencia en desarrollo de aplicaciones con C# .NET / .NET Core, React. Razor, Aplicación de buenas prácticas como SOLID, MVC, MVVM desarrollo de Web APIs, soluciones multiplataforma y multiplataforma. Colaboración en proyectos de distintos sectores: salud, fintech, ERP y sector público.",
+                experience: "Experiencia Profesional",
+                experiences: [
+                    {
+                        title: "Programador Fullstack",
+                        period: "LILAB - Perú | Febrero 2025 – Mayo 2025",
+                        highlights: ["Desarrollo de funcionalidades personalizadas para fintech.", "Ajustes y desarrollo."],
+                        items: [
+                            "Implementación de ajustes tanto en backend (.NET) como frontend (React)",
+                            "Aseguramiento del correcto funcionamiento del sistema en colaboración con el equipode despliegue.",
+                            "Gestión de defectos en Jira y Azure DevOps",
+                            "Colaboración con equipos de desarrollo y Scrum Master"
+                        ]
+                    },
+                    {
+                        title: "Backend Developer",
+                        period: "Talently - Prosoft - CR | 2024 – Enero – 2025",
+                        highlights: ["Mantenimiento y Optimización"],
+                        items: [
+                            "Desarrollo y mantenimiento de funcionalidades para los sistemas legacy de la JPS.",
+                            "Migración de los sistemas legacy de la JPS a web con .net y blazor."
+                        ],
+                        subHighlights: ["Migraciones y Optimizacion"],
+                        subItems: [
+                            "Se realizaron migraciones de base de datos sysbase a sql server",
+                            "Creación y mantenimiento de procedimientos almacenados (stored procedures) y vistas en SQL Server.",
+                            "Optimización de consultas y procesos para mejorar el rendimiento y la eficiencia de los sistemas."
+                        ]
+                    },
+                    {
+                        title: "Programador Full-Stack",
+                        period: "ConCentra/Innovix - DR | Noviembre 2022 - Marzo 2024",
+                        highlights: [
+                            "Creación de reportería con proceso Batch.",
+                            "Mantenimiento y desarrollo de funcionalidades en sistemas Bancatel internos.",
+                            "Sistemas Bancatel."
+                        ],
+                        items: [
+                            "Desarrollo y mantenimiento de funcionalidades para los sistemas ORV, OPV,OPVExterior y SpsBancatel.",
+                            "Implementación de mejoras en servicios Web API y aplicaciones ASP.NET.",
+                            "Desarrollo y soporte de interfaces frontend en React para diversos módulos del sistema",
+                            "Atención a requerimientos del cliente, garantizando la correcta operatividad y evolución de los sistemas."
+                        ],
+                        subHighlights: ["Bases de Datos y Procesos Batch"],
+                        subItems: [
+                            "Creación y mantenimiento de procedimientos almacenados (stored procedures) y vistas en SQL Server",
+                            "Desarrollo de procesos batch para la clasificación de puntos de venta según tipos de distribución: cadenas, mayoristas, Mi Claro Web, USSD, CACS, DACS, entre otros.",
+                            "Optimización de consultas y procesos para mejorar el rendimiento y la eficiencia de los sistemas."
+                        ]
+                    },
+                    {
+                        title: "Programador Full-Stack",
+                        period: "Asociación Dominicana de Rehabilitación - DR | Marzo 2019 - Septiembre 2022",
+                        items: [
+                            "Implementación de software clínico",
+                            "Creación de software de capacitación de personal",
+                            "Integración de ERP SAP y software de ventas",
+                            "Mantenimiento y mejora continua de sistemas"
+                        ]
+                    },
+                    {
+                        title: "Consultor Técnico Junior, Programador",
+                        period: "Octagono GPS - DR | Octubre 2016 - Marzo 2019",
+                        items: [
+                            "Implementación de software para el Ministerio de Administración Pública",
+                            "Desarrollo de Data Warehouse para Banco Vimenca",
+                            "Mantenimiento y optimización de sistemas"
+                        ]
+                    },
+                    {
+                        title: "Ministerio Poder Popular para la Salud (MPPS) – VE",
+                        period: "Programador FullStack – BI | marzo 2014 – agosto 2016",
+                        items: [
+                            "Desarrollo y mantenimiento de funcionalidades, reportes procesos batch y optimización de los sistemas del MPPS",
+                            "Recolección y validación de datos para el análisis y toma de decisiones con SQL Server, SSAS, SSIS, SSRS y diferentes fuentes de datos.",
+                            "Desarrollo de data warehouse con enfoque en analítica y control de información."
+                        ]
+                    }
+                ],
+                skills: "Habilidades Técnicas",
+                skillsTitles: ["Lenguajes", "Frameworks", "Bases de Datos", "Herramientas"],
+                skillsList: [
+                    ["C#", "JavaScript"],
+                    [".NET Framework", ".NET Core", "React JS", "Bootstrap"],
+                    ["SQL Server", "MySQL", "PostgreSQL", "Sybase"],
+                    ["Git", "Jira", "Slack", "Cloud Tools"]
+                ],
+                education: "Educación",
                 degreeTitle: "Ingeniería Informática",
                 university: "Universidad Nacional Experimental Rómulo Gallegos - Mayo 2013",
                 location_university: "San Juan de los Morros, Venezuela",
-                // Idiomas
-                spanish: "Español - Nativo",
-                english: "Inglés - Nivel Intermedio"
+                certifications: "Cursos y Certificaciones",
+                certificationsList: [
+                    ["QA Software Testing", ""],
+                    ["C# Full-Stack - Avanzado", "Udemy - 2022"],
+                    ["NodeJs - Medio", "Udemy - 2022"],
+                    ["Angular - Medio", "Udemy - 2022"],
+                    ["C#, ASP.NET MVC, Microservices - Avanzado", "vaxidrez.com - 2022"],
+                    ["Web Master Frontend - Avanzado", "vaxidrez.com - 2021"],
+                    ["React Native", "Udemy - 2023"]
+                ],
+                languages: "Idiomas",
+                languagesList: ["Español - Nativo", "Inglés - Nivel Intermedio"]
             },
             en: {
-                profile: "Professional Profile",
-                experience: "Professional Experience",
-                skills: "Technical Skills",
-                education: "Education",
-                certifications: "Courses and Certifications",
-                languages: "Languages",
-                location: "Santo Domingo, National District, Dominican Republic",
-                profileText: "Professional with over 8 years of experience in developing high-quality C# and .NET/.NET Core applications, applying best practices such as SOLID, design patterns, MVC, MVVM, Web APIs development, as well as multi-layer and multi-platform applications for different sectors.",
-                qaProfile: "As a QA Automation Engineer, I design and develop automated tests using tools such as Selenium, Cypress, and Postman, ensuring software quality through the implementation of regression, integration, and load testing. I work with CI/CD to ensure efficient execution of testing processes.",
-                qaManual: "In my role as QA Tester, I perform manual and exploratory testing, validating the functionality, usability, and security of applications. I analyze and report defects in a structured manner, contributing to continuous software improvement.",
                 lang: "Español",
-                // Experience
-                qaTesterTitle: "QA Tester",
-                qaTesterPeriod: "Talently - Prosoft - CR | April 2024 – January 2025",
-                qaTesterExp1: "Validation and testing of JPS web and console applications",
-                qaTesterExp2: "Requirements analysis and test case design",
-                qaTesterExp3: "Test execution in different environments",
-                qaTesterExp4: "Defect management in Jira and Azure DevOps",
-                qaTesterExp5: "Collaboration with development teams and Scrum Master",
-                fullStackQATitle: "Full-Stack Developer - QA Automation",
-                fullStackQAPeriod: "ConCentra/Innovix - DR | November 2022 - April 2024",
-                fullStackQAExp1: "Creation of reports with Batch processing",
-                fullStackQAExp2: "Implementation of Bancatel Systems Automation process",
-                fullStackQAExp3: "Frontend and Backend automation with Selenium and C# Nunit",
-                fullStackTitle: "Full-Stack Developer",
-                fullStackPeriod: "Dominican Rehabilitation Association - DR | March 2019 - September 2022",
-                fullStackExp1: "Implementation of clinical software",
-                fullStackExp2: "Creation of staff training software",
-                fullStackExp3: "Integration of ERP SAP and sales software",
-                fullStackExp4: "System maintenance and continuous improvement",
-                consultantTitle: "Junior Technical Consultant, Programmer",
-                consultantPeriod: "Octagono GPS - DR | October 2016 - March 2019",
-                consultantExp1: "Software implementation for the Ministry of Public Administration",
-                consultantExp2: "Data Warehouse development for Banco Vimenca",
-                consultantExp3: "System maintenance and optimization",
-                // Skills
-                languagesTitle: "Languages",
-                frameworksTitle: "Frameworks",
-                databasesTitle: "Databases",
-                toolsTitle: "Tools",
-                // Education
+                name: "Manuel España",
+                mainTitle: "Full-Stack Web Developer",
+                location: "Santo Domingo, National District, Dominican Republic",
+                badges: {
+                    csharp: "C#",
+                    netcore: ".NET Core",
+                    powerbi: "Power BI",
+                    react: "React",
+                    selenium: "Selenium",
+                    cypress: "Cypress",
+                    postman: "Postman"
+                },
+                profile: "Professional Profile",
+                profileText: "Full-Stack Developer with over 10 years of experience in developing applications with C# .NET / .NET Core, React, Razor, applying best practices such as SOLID, MVC, MVVM, Web APIs development, multi-layer and cross-platform solutions. Collaboration in projects from various sectors: health, fintech, ERP, and public sector.",
+                experience: "Professional Experience",
+                experiences: [
+                    {
+                        title: "Fullstack Developer",
+                        period: "LILAB - Peru | February 2025 – May 2025",
+                        highlights: ["Development of custom features for fintech.", "Adjustments and development."],
+                        items: [
+                            "Implementation of adjustments in both backend (.NET) and frontend (React)",
+                            "Ensuring correct system operation in collaboration with the deployment team.",
+                            "Defect management in Jira and Azure DevOps",
+                            "Collaboration with development teams and Scrum Master"
+                        ]
+                    },
+                    {
+                        title: "Backend Developer",
+                        period: "Talently - Prosoft - CR | 2024 – January – 2025",
+                        highlights: ["Maintenance and Optimization"],
+                        items: [
+                            "Development and maintenance of features for JPS legacy systems.",
+                            "Migration of JPS legacy systems to web with .NET and Blazor."
+                        ],
+                        subHighlights: ["Migrations and Optimization"],
+                        subItems: [
+                            "Database migrations from Sybase to SQL Server were performed",
+                            "Creation and maintenance of stored procedures and views in SQL Server.",
+                            "Query and process optimization to improve system performance and efficiency."
+                        ]
+                    },
+                    {
+                        title: "Full-Stack Developer",
+                        period: "ConCentra/Innovix - DR | November 2022 - March 2024",
+                        highlights: [
+                            "Report creation with Batch processing.",
+                            "Maintenance and development of features in internal Bancatel systems.",
+                            "Bancatel Systems."
+                        ],
+                        items: [
+                            "Development and maintenance of features for ORV, OPV, OPVExterior, and SpsBancatel systems.",
+                            "Implementation of improvements in Web API services and ASP.NET applications.",
+                            "Frontend interface development and support in React for various system modules.",
+                            "Client requirements attention, ensuring proper operation and system evolution."
+                        ],
+                        subHighlights: ["Databases and Batch Processes"],
+                        subItems: [
+                            "Creation and maintenance of stored procedures and views in SQL Server",
+                            "Development of batch processes for classifying points of sale by distribution type: chains, wholesalers, Mi Claro Web, USSD, CACS, DACS, among others.",
+                            "Query and process optimization to improve system performance and efficiency."
+                        ]
+                    },
+                    {
+                        title: "Full-Stack Developer",
+                        period: "Dominican Rehabilitation Association - DR | March 2019 - September 2022",
+                        items: [
+                            "Implementation of clinical software",
+                            "Creation of staff training software",
+                            "Integration of ERP SAP and sales software",
+                            "System maintenance and continuous improvement"
+                        ]
+                    },
+                    {
+                        title: "Junior Technical Consultant, Programmer",
+                        period: "Octagono GPS - DR | October 2016 - March 2019",
+                        items: [
+                            "Software implementation for the Ministry of Public Administration",
+                            "Data Warehouse development for Banco Vimenca",
+                            "System maintenance and optimization"
+                        ]
+                    },
+                    {
+                        title: "Ministry of Popular Power for Health (MPPS) – VE",
+                        period: "FullStack Developer – BI | March 2014 – August 2016",
+                        items: [
+                            "Development and maintenance of features, batch report processes and optimization of MPPS systems",
+                            "Data collection and validation for analysis and decision making with SQL Server, SSAS, SSIS, SSRS and different data sources.",
+                            "Data warehouse development focused on analytics and information control."
+                        ]
+                    }
+                ],
+                skills: "Technical Skills",
+                skillsTitles: ["Languages", "Frameworks", "Databases", "Tools"],
+                skillsList: [
+                    ["C#", "JavaScript"],
+                    [".NET Framework", ".NET Core", "React JS", "Bootstrap"],
+                    ["SQL Server", "MySQL", "PostgreSQL", "Sybase"],
+                    ["Git", "Jira", "Slack", "Cloud Tools"]
+                ],
+                education: "Education",
                 degreeTitle: "Computer Engineering",
                 university: "Rómulo Gallegos National Experimental University - May 2013",
                 location_university: "San Juan de los Morros, Venezuela",
-                // Languages
-                spanish: "Spanish - Native",
-                english: "English - Intermediate Level"
+                certifications: "Courses and Certifications",
+                certificationsList: [
+                    ["QA Software Testing", ""],
+                    ["C# Full-Stack - Advanced", "Udemy - 2022"],
+                    ["NodeJs - Intermediate", "Udemy - 2022"],
+                    ["Angular - Intermediate", "Udemy - 2022"],
+                    ["C#, ASP.NET MVC, Microservices - Advanced", "vaxidrez.com - 2022"],
+                    ["Web Master Frontend - Advanced", "vaxidrez.com - 2021"],
+                    ["React Native", "Udemy - 2023"]
+                ],
+                languages: "Languages",
+                languagesList: ["Spanish - Native", "English - Intermediate Level"]
             }
         };
 
@@ -329,80 +504,96 @@ en proyectos de distintos sectores: salud, fintech, ERP y sector público.</p>
         function updateContent() {
             const t = translations[currentLang];
             document.getElementById('langText').textContent = t.lang;
-            
-            // Update all section headers
+            document.getElementById('name').textContent = t.name;
+            document.getElementById('mainTitle').textContent = t.mainTitle;
+            document.getElementById('locationText').textContent = t.location;
+
+            // Badges
+            const badges = document.querySelectorAll('#skillsBadges .skills-badge');
+            badges.forEach(badge => {
+                badge.textContent = t.badges[badge.getAttribute('data-badge')];
+            });
+
+            // About section
             document.querySelector('#about h2').textContent = t.profile;
+            document.querySelector('#about p').textContent = t.profileText;
+
+            // Section headers
             document.querySelector('#experience h2').textContent = t.experience;
             document.querySelector('#skills h2').textContent = t.skills;
             document.querySelector('#education h2').textContent = t.education;
             document.querySelector('#certifications h2').textContent = t.certifications;
             document.querySelector('#languages h2').textContent = t.languages;
-            
-            // Update profile text
-            const aboutParagraphs = document.querySelector('#about').getElementsByTagName('p');
-            aboutParagraphs[0].textContent = t.profileText;
-            aboutParagraphs[1].textContent = t.qaProfile;
-            aboutParagraphs[2].textContent = t.qaManual;
-            
-            // Update location
-            document.querySelector('.lead').textContent = t.location;
 
-            // Update Experience Section
-            const experienceItems = document.querySelectorAll('.experience-item');
-            
-            // QA Tester position
-            experienceItems[0].querySelector('h3').textContent = t.qaTesterTitle;
-            experienceItems[0].querySelector('p').textContent = t.qaTesterPeriod;
-            const qaTesterLis = experienceItems[0].querySelectorAll('li');
-            qaTesterLis[0].textContent = t.qaTesterExp1;
-            qaTesterLis[1].textContent = t.qaTesterExp2;
-            qaTesterLis[2].textContent = t.qaTesterExp3;
-            qaTesterLis[3].textContent = t.qaTesterExp4;
-            qaTesterLis[4].textContent = t.qaTesterExp5;
-
-            // Full-Stack QA position
-            experienceItems[1].querySelector('h3').textContent = t.fullStackQATitle;
-            experienceItems[1].querySelector('p').textContent = t.fullStackQAPeriod;
-            const fullStackQALis = experienceItems[1].querySelectorAll('li');
-            fullStackQALis[0].textContent = t.fullStackQAExp1;
-            fullStackQALis[1].textContent = t.fullStackQAExp2;
-            fullStackQALis[2].textContent = t.fullStackQAExp3;
-
-            // Full-Stack position
-            experienceItems[2].querySelector('h3').textContent = t.fullStackTitle;
-            experienceItems[2].querySelector('p').textContent = t.fullStackPeriod;
-            const fullStackLis = experienceItems[2].querySelectorAll('li');
-            fullStackLis[0].textContent = t.fullStackExp1;
-            fullStackLis[1].textContent = t.fullStackExp2;
-            fullStackLis[2].textContent = t.fullStackExp3;
-            fullStackLis[3].textContent = t.fullStackExp4;
-
-            // Consultant position
-            experienceItems[3].querySelector('h3').textContent = t.consultantTitle;
-            experienceItems[3].querySelector('p').textContent = t.consultantPeriod;
-            const consultantLis = experienceItems[3].querySelectorAll('li');
-            consultantLis[0].textContent = t.consultantExp1;
-            consultantLis[1].textContent = t.consultantExp2;
-            consultantLis[2].textContent = t.consultantExp3;
-
-            // Update Skills Section
+            // Skills section
             const skillsHeadings = document.querySelectorAll('#skills h4');
-            skillsHeadings[0].textContent = t.languagesTitle;
-            skillsHeadings[1].textContent = t.frameworksTitle;
-            skillsHeadings[2].textContent = t.databasesTitle;
-            skillsHeadings[3].textContent = t.toolsTitle;
+            t.skillsTitles.forEach((title, i) => {
+                skillsHeadings[i].textContent = title;
+            });
+            const skillsLists = document.querySelectorAll('#skills ul');
+            t.skillsList.forEach((list, i) => {
+                const lis = skillsLists[i].querySelectorAll('li');
+                list.forEach((item, j) => {
+                    lis[j].textContent = item;
+                });
+            });
 
-            // Update Education Section
+            // Education section
             const educationSection = document.querySelector('#education');
             educationSection.querySelector('h4').textContent = t.degreeTitle;
             const educationParagraphs = educationSection.getElementsByTagName('p');
             educationParagraphs[0].textContent = t.university;
             educationParagraphs[1].textContent = t.location_university;
 
-            // Update Languages Section
+            // Certifications section
+            const certItems = document.querySelectorAll('.certification-item');
+            t.certificationsList.forEach((cert, i) => {
+                certItems[i].querySelector('h5').textContent = cert[0];
+                if (cert[1]) {
+                    certItems[i].querySelector('p') ? certItems[i].querySelector('p').textContent = cert[1] : null;
+                }
+            });
+
+            // Languages section
             const languageItems = document.querySelector('#languages').querySelectorAll('li');
-            languageItems[0].textContent = t.spanish;
-            languageItems[1].textContent = t.english;
+            t.languagesList.forEach((lang, i) => {
+                languageItems[i].textContent = lang;
+            });
+
+            // Experiencia profesional
+            const experienceItems = document.querySelectorAll('.experience-item');
+            t.experiences.forEach((exp, idx) => {
+                const item = experienceItems[idx];
+                if (!item) return;
+                item.querySelector('h3').textContent = exp.title;
+                item.querySelector('p.text-muted').textContent = exp.period;
+
+                // Highlights (p.h5 o p.fw-bold)
+                const highlights = item.querySelectorAll('p.h5, p.fw-bold');
+                if (exp.highlights) {
+                    exp.highlights.forEach((h, i) => {
+                        if (highlights[i]) highlights[i].textContent = h;
+                    });
+                }
+                // Items (li)
+                const lis = item.querySelectorAll('ul')[0]?.querySelectorAll('li');
+                if (lis && exp.items) {
+                    exp.items.forEach((li, i) => {
+                        if (lis[i]) lis[i].textContent = li;
+                    });
+                }
+                // SubHighlights y subItems (si existen)
+                if (exp.subHighlights && exp.subItems) {
+                    const subHighlight = item.querySelectorAll('p.h5, p.fw-bold')[exp.highlights?.length || 0];
+                    if (subHighlight) subHighlight.textContent = exp.subHighlights[0];
+                    const subLis = item.querySelectorAll('ul')[1]?.querySelectorAll('li');
+                    exp.subItems.forEach((li, i) => {
+                        if (subLis && subLis[i]) subLis[i].textContent = li;
+                    });
+                }
+            });
+
+            // TODO: Repite este patrón para cada texto visible en tu HTML (experiencia, subtítulos, etc.)
         }
     </script>
 </body>
